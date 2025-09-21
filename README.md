@@ -4,7 +4,7 @@ A comprehensive data science project analyzing factors that drive used car price
 
 ## About This Project
 
-This project represents my capstone work for the Professional Certificate in Machine Learning and Artificial Intelligence at UC Berkeley College of Engineering in California. I analyzed 426,880 used car records to identify key price drivers and provide data-driven recommendations for inventory acquisition and pricing strategies. Using machine learning models, I achieved ~$8,500 RMSE in price prediction while explaining 66% of price variance.
+This project represents my capstone work for the Professional Certificate in Machine Learning and Artificial Intelligence at UC Berkeley College of Engineering in California. I analyzed 10,000 of the 426,880 used car records to identify key price drivers and provide data-driven recommendations for inventory acquisition and pricing strategies. Using machine learning models, I achieved ~$8,500 RMSE in price prediction while explaining 66% of price variance.
 
 ### Key Findings
 
