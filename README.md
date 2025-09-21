@@ -68,10 +68,12 @@ analyzing_car_prices/
 ## Results Summary
 
 ### Model Performance
-- **Best Model**: Ridge Regression
-- **Test RMSE**: ~$8,500
-- **Test R²**: 0.66
+- **Best Model**: Lasso Regression (slightly better in latest run; Ridge also performed similarly)
+- **Test RMSE**: ~$7,400
+- **Test MAE**: ~$4,900
+- **Test R²**: ~0.73
 - **Cross-validation**: 3-fold CV with hyperparameter tuning
+
 
 ### Top Price Drivers
 Based on permutation importance analysis:
@@ -139,14 +141,6 @@ This project follows the **CRISP-DM** (Cross-Industry Standard Process for Data 
 6. Engineer new features (car_age, manufacturer_grouped)
 7. Prepare for modeling (scaling, encoding)
 ```
-
-### Model Comparison
-
-| Model | CV RMSE | Test RMSE | R² Score |
-|-------|---------|-----------|----------|
-| Ridge Regression | $8,400 | $8,500 | 0.66 |
-| Linear Regression | $8,600 | $8,700 | 0.64 |
-| Lasso Regression | $8,700 | $8,800 | 0.63 |
 
 ## Data Source
 
