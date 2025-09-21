@@ -4,7 +4,20 @@ A comprehensive data science project analyzing factors that drive used car price
 
 ## About This Project
 
-This project represents my capstone work for the Professional Certificate in Machine Learning and Artificial Intelligence at UC Berkeley College of Engineering in California. I analyzed 10,000 of the 426,880 used car records to identify key price drivers and provide data-driven recommendations for inventory acquisition and pricing strategies. Using machine learning models, I achieved ~$8,500 RMSE in price prediction while explaining 66% of price variance.
+This project represents my capstone work for the Professional Certificate in Machine Learning and Artificial Intelligence at UC Berkeley College of Engineering in California. I analyzed 10,000 of the 426,880 used car records to identify key price drivers and provide data-driven recommendations for inventory acquisition and pricing strategies. Using machine learning models, I achieved ~$8,500 RMSE for Ridge Regression. However, after running the full dataset, RMSE for Lasso is only $7, 426.  
+
+Since I have studied Linear, Ridge, and Lasso Regression, I decided to focus on these three models to strengthen my skills and gain a deeper intuition about how they perform in practice. To build confidence, I first ran experiments on a 10,000-row sample before scaling up to the full dataset of 426,880 records. One of my biggest challenges was managing the missing values (missingness). This required me to revisit concepts like one-hot encoding and carefully apply them so that categorical variables could be transformed into numerical features the models could use.
+
+After cleaning and preparing the dataset, I compared the three models using cross-validation. The results showed very similar errors, but Lasso Regression slightly outperformed the others on this run:
+
+=== CROSS-VALIDATION COMPARISON (lower RMSE is better) ===
+Model              CV_RMSE        Best_Params
+0   Lasso Regression   7,533.49   {'regressor__alpha': 0.1}
+1   Linear Regression  7,533.58   {}
+2   Ridge Regression   7,533.70   {'regressor__alpha': 1}
+
+=== BEST MODEL: Lasso Regression ===
+
 
 ### Key Findings
 
